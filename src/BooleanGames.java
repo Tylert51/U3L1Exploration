@@ -52,6 +52,13 @@ public class BooleanGames {
         return (onesDigit == num);
     }
 
+    /* Returns true if the first digit of the instance variable, number, is equal
+       to num; e.g. if number is 437, then isFirstDigit(4) would return true and
+       isFirstDigit(5) would return false; needs to be able to handle case when
+       number is negative, so if the number is -123, then isFirstDigit(1) should
+       return true.
+
+     */
     public boolean isFirstDigit(int num) {
         String numString = Math.abs(number) + "";
         int firstDigit = Integer.parseInt(numString.substring(0,1));
